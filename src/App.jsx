@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 
 function App() {
   useEffect(() => {
-    document.body.style.zoom = "1.20"; // Zooms in immediately
+    document.body.style.zoom = "1.25"; // Zooms in immediately
   }, []);
 
 
