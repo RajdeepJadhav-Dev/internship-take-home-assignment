@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 
 import './App.css'
 import Nav from './components/Nav'
@@ -9,6 +9,9 @@ import Body3 from './components/Body3'
 import Footer from './components/Footer'
 
 function App() {
+  useEffect(() => {
+    document.body.style.zoom = "1.5"; // Zooms in immediately
+  }, []);
 
 
   return (
