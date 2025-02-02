@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes scroll {
+    0% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+    45% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    55% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-50%);
+      opacity: 1;
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 10s linear infinite;
+    animation-play-state: running; /* Default to running */
+  }
+  
+  .animate-scroll:hover {
+    animation-play-state: paused; /* Pause on hover */
+  }
+  
+  /* Smooth fade in and fade out for images */
+  .scroll-item {
+    transition: opacity 0.8s ease-in-out;
+  }
+  
